@@ -1,0 +1,22 @@
+
+<app-navbar></app-navbar>
+
+<div class="container" style="max-width: 500px;">
+    <h3 class="mb-3 mt-5 text-center">Update User</h3>
+  
+    <div class="form-group">
+      <input type="number" [(ngModel)]="userObj.Id" class="form-control" placeholder="Id">
+    </div>
+  
+    <div class="form-group">
+      <input type="text" [(ngModel)]="userObj.Name" class="form-control" placeholder="Name">
+    </div>
+  
+    <div class="form-group">
+      <input type="email" [(ngModel)]="userObj.Email" class="form-control" placeholder="Email">
+    </div>
+  
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="updateUser(userObj.id, userObj)">Update User</button>
+    </div>  
+</div>
